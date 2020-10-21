@@ -4,8 +4,7 @@ session_start();
 if ((!isset($_SESSION['login']) == true) and (!isset($_SESSION['senha']) == true)) {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
-  echo $site;
-  //header('location:' . $site . 'login.php');
+  header('location:' . $site . 'login.php');
 }
 
 $logado = $_SESSION['nome'];
