@@ -4,7 +4,7 @@ $url = (isset($_SERVER['HTTPS']) ? "https://" : "http://");
 
 $url .= $_SERVER['HTTP_HOST']. str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
-$site = $url;
+$site = $url . '/web/';
 
 $db_name = realpath(__DIR__) . DIRECTORY_SEPARATOR . 'database.db';
 
